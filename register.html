@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <style>
+    .container{
+      width: 250px;
+      margin: 100px auto 0;
+      text-align: center;
+    }
+    .input-group{
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+    input{
+      padding: 0 10px;
+    }
+    input#code{
+      width: 55px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>注册账户</h3>
+    <table id="register">
+      <div class="input-group">
+        <label for="phone">手机号: <input id="phone" type="tel" autocomplete="off"></label>
+      </div>
+      <div class="input-group">
+        <label for="code">验证码: <input id="code" type="tel" autocomplete="off"></label>
+        <button class="getCode">免费获取验证码</button>
+      </div>
+      <div class="input-group">
+        <button id="btnSubmit">提交</button>
+      </div>
+    </table>
+  </div>
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/senMessage.js"></script>
+  <script>
+    sendMessage.init({
+      clickEl:'.getCode',
+      phoneEl:'#phone',
+      codeEl:'#code',
+      submitEl:'#btnSubmit'
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
